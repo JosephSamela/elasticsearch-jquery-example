@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Elasticsearch example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="elasticsearch.jquery.js"></script>
+</head>
+
+<body>
+    <h1>Elasticsearch jQuery example</h1>
+    <p>See results in console (ctrl-shift-J). Refresh page to re-query.</p>
+
+    Elasticsearch Address:
+    <input id="address" value="10.10.32.199:9200">
+    <br> Elasticsearch Index:
+    <input id="index" value="example-index">
+    <br> Document Type:
+    <input id="type" value="test">
+    <br>
+
+    <hr>
+
+    <h2>Test 1 - POST data to Elasticsearch</h2>
+    <textarea id="data" rows="10" cols="50">
+{
+    "hello":"world"
+}
+    </textarea>
+    <br>
+    <button onclick="post()">POST</button>
+    <p id="test1_result"></p>
+
+    <hr>
+
+    <h2>Test 2 - GET data from Elasticsearch</h2>
+    <textarea id="query" rows="10" cols="50">
+{
+    "query": {
+        "match_all": {}
+    }
+}
+    </textarea>
+    <br>
+    <button onclick="get()">GET</button>
+    <p id="test2_result"></p>
+
+</body>
+
+<script src="main.js"></script>
+
+</html>
