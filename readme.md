@@ -1,6 +1,6 @@
 # Elasticsearch Jquery Example
 
-Dead simple example to POST and GET data from Elasticsearch using jquery!
+The web is a wild place with no instruction manual. Some say querying a database is the job of servers. I say it’s every-man-for-himself. There ain’t no model-view-controller gonna hold me down. Here’s a dead simple example to POST and GET data from Elasticsearch using jquery - directly from the browser. Live dangerously.🌵☠️⚡
 
 ## Usage
 
